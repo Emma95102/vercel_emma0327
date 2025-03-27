@@ -35,7 +35,7 @@ def about():
 def welcome():
     user = request.values.get("nick")
     w = request.values.get("work")
-    return render_template("welcome.html", name=user,work = w)
+    return render_template("welcome.html", name=user, work = w)
 
 @app.route("/account", methods=["GET", "POST"])
 def account():
